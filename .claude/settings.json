@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python $s --server \"npm run start\" --port 3000 -- python 'C:\\\\Users\\\\rafae\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--portfolio-labazul\\\\38442e7c-b155-41ab-909e-15e530eda726\\\\scratchpad\\\\check.py')",
+      "Bash(python \"/c/Users/rafae/AppData/Local/Temp/claude/c--portfolio-labazul/38442e7c-b155-41ab-909e-15e530eda726/scratchpad/mobile.py\")"
+    ]
+  }
+}
