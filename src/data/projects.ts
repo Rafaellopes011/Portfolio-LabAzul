@@ -6,6 +6,8 @@ export interface Project {
   description: string;
   /** Foto real do projeto; sem ela, os cards mostram um painel gráfico. */
   coverImage?: string;
+  /** Foto de fundo do card em destaque, quando a capa não serve (ex.: logo). */
+  featuredImage?: string;
   gallery?: string[];
   categories: string[];
   partners?: string[];
@@ -48,7 +50,6 @@ export const projects: Project[] = [
       "Painel de indicadores ambientais para apoio à decisão pública",
       "Formação de estudantes de graduação e pós-graduação em ciência de dados ambientais",
     ],
-    featured: true,
     geo: [{ label: "Fortaleza — Brasil", lat: -3.73, lng: -38.52 }],
   },
   {
@@ -86,6 +87,8 @@ export const projects: Project[] = [
     description:
       "Jornada de inovação que leva cultura de P&D a micro e pequenas indústrias cearenses da economia do mar, com foco em bioinsumos, bioprocessos, biomateriais e valorização de recursos aquáticos.",
     coverImage: "/images/biotec-cover.jpg",
+    featuredImage: "/images/biotec-equipe.jpg",
+    gallery: ["/images/biotec-equipe.jpg", "/images/biotec-tec-unifor.jpg"],
     categories: ["Biotec", "Economia Azul", "Tecnologia"],
     partners: ["FIEC", "SEBRAE", "UNIFOR", "TEC Unifor"],
     year: 2025,
@@ -99,6 +102,7 @@ export const projects: Project[] = [
       "Soluções sustentáveis prototipadas em bioinsumos e biomateriais",
       "Governança compartilhada entre Lab Azul, TEC Unifor e setor produtivo",
     ],
+    featured: true,
     geo: [{ label: "Ceará — Brasil", lat: -4.5, lng: -39.3 }],
   },
   {

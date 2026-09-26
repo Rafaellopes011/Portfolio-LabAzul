@@ -6,6 +6,8 @@ import { Reveal } from "@/components/Reveal";
 import type { Project } from "@/data/projects";
 
 export function ProjectFeatured({ project }: { project: Project }) {
+  const image = project.featuredImage ?? project.coverImage;
+
   return (
     <Reveal>
       <article className="group/card grain relative isolate overflow-hidden rounded-[3px] bg-abyss text-paper shadow-[0_40px_80px_-40px_rgba(10,34,64,0.55)]">
@@ -16,9 +18,9 @@ export function ProjectFeatured({ project }: { project: Project }) {
           aria-hidden="true"
           className="relative block aspect-[16/10] overflow-hidden lg:absolute lg:inset-0 lg:aspect-auto"
         >
-          {project.coverImage ? (
+          {image ? (
             <Image
-              src={project.coverImage}
+              src={image}
               alt=""
               fill
               sizes="100vw"
