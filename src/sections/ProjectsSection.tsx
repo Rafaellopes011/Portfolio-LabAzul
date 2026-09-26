@@ -58,14 +58,11 @@ export function ProjectsSection() {
           ))}
         </div>
 
-        <Reveal className="mt-20 flex flex-wrap items-center justify-between gap-6 border-t border-deep/12 pt-8">
+        <Reveal className="mt-20 border-t border-deep/12 pt-8">
           <p className="eyebrow text-[0.625rem] text-deep/45">
             {secondaryProjects.length + 1} projetos · pesquisa aplicada ·
             2025—2026
           </p>
-          <ActionLink href="/projetos" variant="outline" className="text-deep">
-            Explorar portfólio completo
-          </ActionLink>
         </Reveal>
       </div>
     </section>

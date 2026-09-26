@@ -8,6 +8,7 @@ import {
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ScrollReset } from "@/components/ScrollReset";
 
 const manrope = Manrope({
   subsets: ["latin", "latin-ext"],
@@ -70,6 +71,7 @@ export default function RootLayout({
       <body
         className={`${manrope.variable} ${dmSans.variable} ${instrument.variable} ${plexMono.variable} antialiased`}
       >
+        <ScrollReset />
         <a
           href="#conteudo"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-[3px] focus:bg-cyan focus:px-5 focus:py-3 focus:font-display focus:text-[0.75rem] focus:font-bold focus:tracking-[0.1em] focus:text-abyss focus:uppercase"
