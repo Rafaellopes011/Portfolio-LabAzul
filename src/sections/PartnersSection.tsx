@@ -15,7 +15,7 @@ export function PartnersSection() {
       <div className="shell">
         <div className="grid grid-cols-12 items-end gap-y-8">
           <div className="col-span-12 lg:col-span-6">
-            <SectionTag index="10" className="text-ocean">
+            <SectionTag index="09" className="text-ocean">
               Rede
             </SectionTag>
             <HeadingReveal

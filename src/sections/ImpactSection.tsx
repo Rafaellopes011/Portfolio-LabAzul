@@ -69,7 +69,7 @@ export function ImpactSection() {
       <div className="shell relative">
         <div className="grid grid-cols-12 items-end gap-y-10">
           <div className="col-span-12 lg:col-span-6">
-            <SectionTag index="09" className="text-cyan">
+            <SectionTag index="08" className="text-cyan">
               Alcance
             </SectionTag>
             <HeadingReveal

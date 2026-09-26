@@ -6,7 +6,6 @@ import { ExpertiseSection } from "@/sections/ExpertiseSection";
 import { ProjectsSection } from "@/sections/ProjectsSection";
 import { LeadershipSection } from "@/sections/LeadershipSection";
 import { TeamSection } from "@/sections/TeamSection";
-import { PublicationsSection } from "@/sections/PublicationsSection";
 import { ImpactSection } from "@/sections/ImpactSection";
 import { PartnersSection } from "@/sections/PartnersSection";
 import { FinalCTA } from "@/sections/FinalCTA";
@@ -22,7 +21,6 @@ export default function Home() {
       <ProjectsSection />
       <LeadershipSection />
       <TeamSection />
-      <PublicationsSection />
       <ImpactSection />
       <PartnersSection />
       <FinalCTA />

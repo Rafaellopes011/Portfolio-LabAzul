@@ -31,7 +31,7 @@ export const expertise: ExpertiseArea[] = [
     title: "Biotec Azul",
     lead: "Biotecnologia aplicada aos recursos aquáticos e às cadeias da pesca.",
     topics: ["Pesca", "Aquicultura", "Bioprocessos", "Bioinsumos"],
-    image: "/images/lab-biotech.jpg",
+    image: "/images/biotec-equipe.jpg",
     depth: "10–40 m",
     filter: "Biotec",
   },

@@ -6,8 +6,6 @@ export interface Project {
   description: string;
   /** Foto real do projeto; sem ela, os cards mostram um painel gráfico. */
   coverImage?: string;
-  /** Foto de fundo do card em destaque, quando a capa não serve (ex.: logo). */
-  featuredImage?: string;
   gallery?: string[];
   categories: string[];
   partners?: string[];
@@ -86,9 +84,8 @@ export const projects: Project[] = [
     subtitle: "Jornada de Inovação em Economia Azul",
     description:
       "Jornada de inovação que leva cultura de P&D a micro e pequenas indústrias cearenses da economia do mar, com foco em bioinsumos, bioprocessos, biomateriais e valorização de recursos aquáticos.",
-    coverImage: "/images/biotec-cover.jpg",
-    featuredImage: "/images/biotec-equipe.jpg",
-    gallery: ["/images/biotec-equipe.jpg", "/images/biotec-tec-unifor.jpg"],
+    coverImage: "/images/biotec-equipe.jpg",
+    gallery: ["/images/biotec-tec-unifor.jpg", "/images/biotec-cover.jpg"],
     categories: ["Biotec", "Economia Azul", "Tecnologia"],
     partners: ["FIEC", "SEBRAE", "UNIFOR", "TEC Unifor"],
     year: 2025,

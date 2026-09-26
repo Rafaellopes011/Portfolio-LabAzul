@@ -1,10 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
-import { LogoMark } from "@/components/Logo";
 import { Bathymetry } from "@/components/Decor";
 import { navigation, site } from "@/data/site";
 
 const quickLinks = navigation.filter((item) =>
-  ["Início", "Sobre", "Projetos", "Publicações", "Equipe"].includes(item.label),
+  ["Início", "Sobre", "Projetos", "Equipe"].includes(item.label),
 );
 
 export function Footer() {
@@ -19,7 +19,13 @@ export function Footer() {
       <div className="shell relative">
         <div className="grid grid-cols-12 gap-y-14">
           <div className="col-span-12 lg:col-span-5">
-            <LogoMark className="h-11 w-11 text-foam" />
+            <Image
+              src="/images/logo-labazul-branco.png"
+              alt="Logo do Lab Azul"
+              width={297}
+              height={307}
+              className="h-20 w-auto"
+            />
             <p className="mt-6 font-display text-[1.6rem] leading-[1.05] font-extrabold tracking-[-0.035em]">
               Lab Azul
             </p>
@@ -63,6 +69,8 @@ export function Footer() {
               <li>
                 <a
                   href={site.instagram.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="underline-offset-8 transition-colors duration-400 hover:text-foam hover:underline"
                 >
                   Instagram · {site.instagram.label}
@@ -71,6 +79,8 @@ export function Footer() {
               <li>
                 <a
                   href={site.linkedin.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="underline-offset-8 transition-colors duration-400 hover:text-foam hover:underline"
                 >
                   LinkedIn · {site.linkedin.label}
