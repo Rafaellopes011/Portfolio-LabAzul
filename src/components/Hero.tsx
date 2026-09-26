@@ -138,7 +138,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.2, delay: 1, ease: EASE }}
-            className="col-span-12 hidden justify-end gap-10 text-right xl:col-span-6 xl:flex"
+            className="col-span-12 flex flex-wrap gap-x-8 gap-y-5 xl:col-span-6 xl:justify-end xl:gap-10 xl:text-right"
           >
             {[
               { term: "Estação", value: "Fortaleza · Ceará" },
